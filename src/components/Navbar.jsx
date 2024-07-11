@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center bg-[#191932] text-white'>
 
-      <div className='flex justify-between w-4/5 items-center mx-auto border-[#343B41] border-b-4 h-full'>
+      <div className='flex justify-between w-4/5 items-center mx-auto border-[#343B41] border-b-2 h-full'>
         <div className=''>
           <img src={logoIcon} alt ='Logo Icon' fill="white"></img>
         </div>
@@ -29,8 +29,8 @@ export default function Navbar() {
       </div>
       
       {/* Hamburger Menu */}
-      <div onClick = {handleClick} className='md:hidden z-10 px-2 cursor-pointer'>
-        {!nav &&  <CgMenuGridR style={{color:"#1469FF" }} size={35} />}
+      <div onClick = {handleClick} className='md:hidden fixed right-8 z-10 cursor-pointer'>
+        {!nav &&  <CgMenuGridR style={{color:"#1469FF" }} size={35}/>}
       </div>
 
       {/* Hamburger Menu Items */}

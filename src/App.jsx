@@ -1,6 +1,5 @@
-import react from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      {/* <Home/> */}
+      <Home/>
     </>
   )
 }
