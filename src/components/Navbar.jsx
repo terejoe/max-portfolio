@@ -29,7 +29,7 @@ export default function Navbar() {
       </div>
       
       {/* Hamburger Menu */}
-      <div onClick = {handleClick} className='md:hidden fixed right-8 z-10 cursor-pointer'>
+      <div onClick = {handleClick} className='md:hidden fixed right-8 cursor-pointer'>
         {!nav &&  <CgMenuGridR style={{color:"#1469FF" }} size={35}/>}
       </div>
 
