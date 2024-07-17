@@ -27,19 +27,19 @@ export default function About() {
             <p className='mt-3 text-[#ADB5BD] text-left'>I am available for your next project
             </p>
 
-            <div className='mt-4 text-center flex justify-start'>
+            <div className='mt-4 text-center flex justify-start mb-4'>
               <ul className='flex text-[#156AFF]'>    
                 <li className='uppercase text-sm lato-bold flex rounded-md'>
-                  <a href='/'>Github</a><span className='ml-2'> | </span>
+                  <a href='https://github.com/kellslte'>Github</a><span className='ml-2'> | </span>
                 </li> 
                 <li className='mx-2 uppercase text-sm lato-bold flex rounded-md'>
-                  <a href='/'>Twitter</a><span className='ml-2'> | </span>
+                  <a href='https://x.com/kellslte'>Twitter</a><span className='ml-2'> | </span>
                 </li> 
                 <li className='mx-2 uppercase text-sm lato-bold flex rounded-md'>
-                  <a href='/'>LinkedIn</a><span className='ml-2'> | </span>
+                  <a href='https://linkedin.com/in/max-otifavour'>LinkedIn</a><span className='ml-2'> | </span>
                 </li> 
                 <li className='mx-2 uppercase text-sm lato-bold flex rounded-md'>
-                  <a href='/'>Mail Me</a>
+                  <a href='mailto:maxotif@gmail.com'>Mail Me</a>
                 </li> 
               </ul>
             </div>

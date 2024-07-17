@@ -1,8 +1,11 @@
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import About from './components/About';
-import Experience from './components/Experience';
+import Navbar from './pages/Navbar';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
+import Blog from './pages/Blog';
+
 
 
 function App() {
@@ -14,6 +17,8 @@ function App() {
       <Projects/>
       <About/>
       <Experience/>
+      <Contact/>
+      <Blog/>
     </>
   )
 }

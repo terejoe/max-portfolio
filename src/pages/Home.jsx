@@ -17,7 +17,6 @@ export default function Home() {
         
         <Link  to="" smooth={true} duration={500}><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center my-2 border-[#1469FF] uppercase text-sm'>View Resume<span className='group-hover:rotate-90 duration-300'><RiArrowRightUpFill className='ml-3' size={18}/></span></button></Link>
 
-        
       </div>
 
       <div className='bottom-0 hidden md:block relative'>
@@ -27,11 +26,11 @@ export default function Home() {
 
         <div className='bottom-0 end-0 absolute pr-20'>
           <li className='mx-2 mb-2 bg-blue-600 w-[30px] h-[30px] items-center justify-center flex rounded-full'>
-          <a href="mailto:nzeamalunkechinyere@gmail.com"><FaXTwitter size={20} className='fill-white'/></a></li> 
+          <a href="https://x.com/kellslte"><FaXTwitter size={20} className='fill-white'/></a></li> 
 
-          <li className='mx-2 mb-2 bg-blue-600 w-[30px] h-[30px] items-center justify-center flex rounded-full'><a href='https://linkedin.com/in/nzeamalu-nkechinyere-9b0476192'><FaLinkedinIn size={20} className='fill-white'/></a></li>
+          <li className='mx-2 mb-2 bg-blue-600 w-[30px] h-[30px] items-center justify-center flex rounded-full'><a href='https://linkedin.com/in/max-otifavour'><FaLinkedinIn size={20} className='fill-white'/></a></li>
 
-          <li className='mx-2 mb-2 bg-blue-600 w-[30px] h-[30px] items-center justify-center flex rounded-full'><a href='https://github.com/terejoe'><RiGithubLine size={22} className='fill-white'/></a></li>
+          <li className='mx-2 mb-2 bg-blue-600 w-[30px] h-[30px] items-center justify-center flex rounded-full'><a href='https://github.com/kellslte'><RiGithubLine size={22} className='fill-white'/></a></li>
 
           <div className='border-[#343B41] h-[120px] w-px border-2 mx-5'></div>
 

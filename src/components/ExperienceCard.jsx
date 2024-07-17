@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiOutlineBriefcase } from "react-icons/hi";
 
-export default function WorkCard() {
+export default function ExperienceCard() {
   return (
     <div className='col-span-2'>
       <div className='mt-4 flex gap-6 md:px-4 px-2'>
@@ -13,7 +13,6 @@ export default function WorkCard() {
         </div>
 
       </div>
-
 
       <div className='md:pl-20 pl-10 text-[#ADB5BD] pr-2'>
         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna et facilisis eleifend egestas iaculis.</li>
