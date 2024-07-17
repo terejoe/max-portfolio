@@ -13,9 +13,11 @@ export default function Blog() {
         </div>
 
         <div className='flex md:pl-32 pl-2 flex-row overflow-x-hidden gap-4'>
+
           <BlogCard/>
           <BlogCard/>
           <BlogCard/>
+          
         </div>
 
         <div className='mt-10 mx-auto'>

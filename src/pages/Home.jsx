@@ -1,5 +1,5 @@
 import React from 'react';
-import { RiArrowRightUpFill } from "react-icons/ri";
+import { GoArrowUpRight } from "react-icons/go";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiGithubLine } from "react-icons/ri";
@@ -15,13 +15,13 @@ export default function Home() {
 
         <p className='text-[#ADB5BD] lato-regular text-left mb-6 leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien, gravida varius enim posuere tortor, lacus. Viverra orci euismod amet, id. Magna mi lacus sapien lorem. Arcu massa non dolor, egestas scelerisque eu. Sagittis nibh vitae ultrices eget amet porttitor volutpat elit. Gravida neque id sed nisi malesuada fermentum, aliquam mauris turpis.</p>
         
-        <Link  to="" smooth={true} duration={500}><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center my-2 border-[#1469FF] uppercase text-sm'>View Resume<span className='group-hover:rotate-90 duration-300'><RiArrowRightUpFill className='ml-3' size={18}/></span></button></Link>
+        <Link  to="" smooth={true} duration={500}><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center my-2 border-[#1469FF] uppercase text-sm'>View Resume<span className='group-hover:rotate-90 duration-300'><GoArrowUpRight className='ml-3' size={18}/></span></button></Link>
 
       </div>
 
       <div className='bottom-0 hidden md:block relative'>
         <div className='left-0 bottom-0 absolute px-40 py-6'>
-        <FaArrowDownLong size={30} className='fill-[#ADB5BD] bounce'/>
+        <Link to="projects" smooth={true} duration={500}><FaArrowDownLong size={30} className='fill-[#ADB5BD] bounce cursor-pointer'/></Link>
         </div>
 
         <div className='bottom-0 end-0 absolute pr-20'>

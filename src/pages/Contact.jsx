@@ -17,7 +17,12 @@ export default function Contact() {
             <p className='md:text-5xl text-xl text-white text-left league-spartan-bold my-8'>Got an idea you would like us to talk about?</p>
           </div>
 
-          <Link  to="" smooth={true} duration={500}><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center mb-6 border-[#1469FF] uppercase text-sm'>View Resume<TbMailCheck className='ml-3' size={18}/></button></Link>
+          {/* Desktop View */}
+          <button className='text-[#1469FF] border-2 px-6 py-3 w-max items-cente mb-6 border-[#1469FF] uppercase text-sm hidden md:flex'><a href='mailto:maxotif@gmail.com'> Shoot Me a Mail<TbMailCheck className='ml-3 inline' size={18}/></a></button>
+
+          {/* Mobile View */}
+          <button className='text-[#1469FF] border-2 px-6 py-3 flex w-max items-cente mb-6 border-[#1469FF] uppercase text-sm md:hidden'><a href=""> View Resume<TbMailCheck className='ml-3 inline' size={18}/></a></button>
+
         </div>
       </div>
 
