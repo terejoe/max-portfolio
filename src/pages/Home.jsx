@@ -21,7 +21,7 @@ export default function Home() {
 
       <div className='bottom-0 hidden md:block relative'>
         <div className='left-0 bottom-0 absolute px-40 py-6'>
-        <FaArrowDownLong size={30} className='fill-[#ADB5BD]'/>
+        <FaArrowDownLong size={30} className='fill-[#ADB5BD] bounce'/>
         </div>
 
         <div className='bottom-0 end-0 absolute pr-20'>

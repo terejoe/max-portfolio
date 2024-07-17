@@ -20,11 +20,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex'>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase'><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase'><Link to="about" smooth={true} duration={500}>About Me</Link></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase'><Link to="work" smooth={true} duration={500}>Work Experience</Link></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase'><Link to="contact" smooth={true} duration={500}>Contact Me</Link></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase'><Link to="blog" smooth={true} duration={500}>My Blog</Link></li>
+          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
+          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><Link to="about" smooth={true} duration={500}>About Me</Link></li>
+          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><Link to="work" smooth={true} duration={500}>Work Experience</Link></li>
+          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><Link to="contact" smooth={true} duration={500}>Contact Me</Link></li>
+          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><Link to="blog" smooth={true} duration={500}>My Blog</Link></li>
         </ul>
       </div>
       
@@ -35,12 +35,12 @@ export default function Navbar() {
 
       {/* Hamburger Menu Items */}
       <ul className = {!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#191932] flex flex-col justify-center items-center text-white'}>
-        <li><FaTimes onClick = {handleClick} size={35} className='mx-auto'/></li>
-        <li className='py-6 text-4xl uppercase'><Link onClick = {handleClick} to="projects" smooth={true} duration={500}>Projects</Link></li>
-        <li className='py-6 text-4xl uppercase'><Link onClick = {handleClick} to="about" smooth={true} duration={500}>About Me</Link></li>
-        <li className='py-6 text-4xl uppercase'><Link onClick = {handleClick} to="work" smooth={true} duration={500}>Work Experience</Link></li>
-        <li className='py-6 text-4xl uppercase'><Link onClick = {handleClick} to="contact" smooth={true} duration={500}>Contact Me</Link></li>
-        <li className='py-6 text-4xl uppercase'><Link onClick = {handleClick} to="blog" smooth={true} duration={500}>My Blog</Link></li>
+        <li><FaTimes onClick = {handleClick} size={35} className='mx-auto cursor-pointer'/></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><Link onClick = {handleClick} to="projects" smooth={true} duration={500}>Projects</Link></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><Link onClick = {handleClick} to="about" smooth={true} duration={500}>About Me</Link></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><Link onClick = {handleClick} to="work" smooth={true} duration={500}>Work Experience</Link></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><Link onClick = {handleClick} to="contact" smooth={true} duration={500}>Contact Me</Link></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><Link onClick = {handleClick} to="blog" smooth={true} duration={500}>My Blog</Link></li>
       </ul>
       
     </div>
