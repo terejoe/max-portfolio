@@ -12,7 +12,7 @@ export default function Blog() {
           <p className='md:text-8xl text-6xl text-[#51516A] league-spartan-bold mb-2'>My Blog</p>
         </div>
 
-        <div className='flex md:pl-32 pl-2 flex-row overflow-x-hidden gap-4'>
+        <div className='flex md:ml-32 ml-2 flex-row overflow-x-auto swiper pb-2 gap-4'>
 
           <BlogCard/>
           <BlogCard/>
