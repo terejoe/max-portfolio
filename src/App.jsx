@@ -1,6 +1,6 @@
 import Navbar from './pages/Navbar';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import Projects from './pages/Project';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Contact from './pages/Contact';

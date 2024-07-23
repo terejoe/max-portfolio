@@ -2,6 +2,7 @@ import React from 'react'
 import BlogCard from '../components/BlogCard'
 import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
 import { RiGithubLine } from 'react-icons/ri'
+import { TbMailCheck } from 'react-icons/tb'
 
 export default function Blog() {
   return (
@@ -20,7 +21,12 @@ export default function Blog() {
           
         </div>
 
-        <div className='mt-10 mx-auto'>
+        <div className='mt-8 mx-32'>
+          <button className='text-[#1469FF] border-2 px-6 py-3 flex w-max items-cente mb-6 border-[#1469FF] uppercase text-sm'> View All Blogs</button>
+        </div>
+        
+
+        <div className='mx-auto'>
 
           <div className='flex md:hidden gap-4'>
             <li className='mx-2 mb-2 bg-blue-600 w-[30px] h-[30px] items-center justify-center flex rounded-full'>

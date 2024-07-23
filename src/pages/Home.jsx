@@ -15,7 +15,7 @@ export default function Home() {
 
         <p className='text-[#ADB5BD] lato-regular text-left mb-6 leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien, gravida varius enim posuere tortor, lacus. Viverra orci euismod amet, id. Magna mi lacus sapien lorem. Arcu massa non dolor, egestas scelerisque eu. Sagittis nibh vitae ultrices eget amet porttitor volutpat elit. Gravida neque id sed nisi malesuada fermentum, aliquam mauris turpis.</p>
         
-        <Link  to="" smooth={true} duration={500}><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center my-2 border-[#1469FF] uppercase text-sm'>View Resume<span className='group-hover:rotate-90 duration-300'><GoArrowUpRight className='ml-3' size={18}/></span></button></Link>
+        <Link  to="" smooth={true} duration={500}><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center my-2 border-[#1469FF] uppercase text-sm'>View Resume<GoArrowUpRight className='ml-3' size={18}/></button></Link>
 
       </div>
 

@@ -11,7 +11,7 @@ export default function Navbar() {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center bg-[#191932] text-white'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center bg-[#191932] text-white z-10'>
 
       <div className='flex justify-between w-4/5 items-center mx-auto border-[#343B41] border-b-2 h-full'>
         <div className=''>
