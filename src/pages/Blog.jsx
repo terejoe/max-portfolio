@@ -21,7 +21,7 @@ export default function Blog() {
           
         </div>
 
-        <div className='mt-8 mx-32'>
+        <div className='mt-8 md:mx-32 mx-4'>
           <button className='text-[#1469FF] border-2 px-6 py-3 flex w-max items-cente mb-6 border-[#1469FF] uppercase text-sm'> View All Blogs</button>
         </div>
         
