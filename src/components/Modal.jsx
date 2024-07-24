@@ -14,9 +14,7 @@ export default function Modal({title, text, href, lang,  isOpen, closeModal}) {
     }
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    }
+    
   }, [closeModal]);
 
   if (!isOpen) return <></>;
