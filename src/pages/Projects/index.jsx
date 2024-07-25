@@ -5,8 +5,8 @@ import { ProjectList } from './data';
 
 export default function Projects() {
   return (
-    <div name ='projects' className='w-full bg-[#1E1E37]'>
-      <div className='mx-auto flex flex-col pt-10 pb-10 justify-center w-full h-full px-2'>
+    <div id='projects' className='w-full bg-[#1E1E37]'>
+      <div className='mx-auto flex flex-col pt-20 pb-10 justify-center w-full h-full px-2'>
         <div className='text-center'>
           <p className='md:text-9xl text-4xl text-[#51516A] league-spartan-bold mb-6jr'>Selected Projects</p>
         </div>

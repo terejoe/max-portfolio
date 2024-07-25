@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div name='about'className='w-full h-screen bg-[#191932]'>
-      <div className='flex flex-col justify-center items-center w-full h-full text-center mx-auto px-2'>
+    <div id='about'className='w-full bg-[#191932]'>
+      <div className='flex flex-col justify-center items-center w-full h-full text-center mx-auto px-2 pt-20'>
 
         <div className=''>
           <p className='md:text-8xl text-6xl text-[#51516A] league-spartan-bold mb-2 mt-6'>About Me</p>

@@ -4,7 +4,7 @@ import { TbMailCheck } from 'react-icons/tb';
 export default function Contact() {
   return (
     <>
-      <div className='w-full h-[130px] bg-[#191932]'>
+      <div id='contact' className='w-full h-[130px] bg-[#191932]'>
         <div className='py-8 flex overflow-x-auto swiper pl-10'>
           <p className='text-7xl text-[#51516A] league-spartan-bold shrink-0'>I write PHP, JavaScript, TypeSript, GoLang</p>
         </div>

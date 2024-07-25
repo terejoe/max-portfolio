@@ -6,8 +6,8 @@ import { GoArrowUpRight } from 'react-icons/go';
 
 export default function Experience() {
   return (
-    <div name='work-experience'className='w-full bg-[#1E1E37]'>
-      <div className='flex flex-col justify-center items-center w-full h-full mx-auto px-2'>
+    <div id='work-experience'className='w-full bg-[#1E1E37]'>
+      <div className='flex flex-col justify-center items-center w-full h-full mx-auto px-2 pt-20'>
 
         <div className=''>
           <p className='text-4xl md:text-9xl text-[#51516A] league-spartan-bold mb-2 mt-2'>Work Experience</p>

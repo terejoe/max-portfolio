@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react'
-import { LuFolderDot } from 'react-icons/lu';
 import { BlogList } from '../pages/Blog/data';
 
 export default function ModalBlog({isOpen, isClose}) {
