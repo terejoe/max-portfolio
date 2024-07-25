@@ -7,7 +7,7 @@ export default function About() {
       <div className='flex flex-col justify-center items-center w-full h-full text-center mx-auto px-2 pt-20'>
 
         <div className=''>
-          <p className='md:text-8xl text-6xl text-[#51516A] league-spartan-bold mb-2 mt-6'>About Me</p>
+          <p className='md:text-8xl text-6xl text-[#51516A] league-spartan-bold mb-2'>About Me</p>
         </div>
         
 
@@ -17,7 +17,7 @@ export default function About() {
             {/* <img src={potrait} alt='Potrait' className='h-96 w-68'/> */}
           </div>
 
-          <div className='mt-8 m-auto'>
+          <div className='mt-6 m-auto'>
             <p className='text-left md:text-4xl text-3xl league-spartan-bold text-white'>You can call me Max.</p>
             <p className='mt-2 text-[#ADB5BD] text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare lobortis dictum ultrices nec diam. Elementum, nisl lectus vel et. Risus at urna, tristique est magna ornare ipsum interdum nulla. Tempus, fames ullamcorper tempus eget. Eget sed sit mollis ipsum parturient vel condimentum. Lectus ultrices tortor integer porttitor.  </p>
             

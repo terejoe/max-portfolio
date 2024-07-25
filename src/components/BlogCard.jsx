@@ -11,7 +11,7 @@ export default function BlogCard({title, text}) {
         <p className='leading-6 text-sm md:text-base text-[#ADB5BD]'> {text} </p>              
       </div>
 
-      <Link to="./blog-posts" ><button className='text-blue-600 font-bold group border-2 px-6 py-3 flex items-center uppercase text-sm border-none mb-4'>Read More<span className='group-hover:rotate-90 duration-300'><RiArrowRightUpFill className='ml-3' size={18}/></span></button></Link>
+      <Link to="/blog-post" ><button className='text-blue-600 font-bold px-6 py-3 flex items-center uppercase text-sm border-none mb-4'>Read More<RiArrowRightUpFill className='ml-3' size={18}/></button></Link>
     </div>
   )
 }
