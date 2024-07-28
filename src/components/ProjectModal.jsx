@@ -3,7 +3,7 @@ import { FaTimes } from 'react-icons/fa'
 import { GoArrowUpRight } from 'react-icons/go'
 import { LuFolderDot } from 'react-icons/lu'
 
-export default function Modal({title, text, href, lang,  isOpen, closeModal}) {
+export default function ProjectModal({title, text, href, lang,  isOpen, closeModal}) {
   const modalRef = useRef(null);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Modal({title, text, href, lang,  isOpen, closeModal}) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div  ref={modalRef} className='bg-[#191932] fixed w-[350px] md:w-[550px]'>
+      <div  ref={modalRef} className='bg-[#191932] fixed w-[320px] md:w-[550px]'>
         <div className='justify-center items-center'>
           <div className='p-8'>
             <div className='flex gap-4 mb-1'>
@@ -32,7 +32,7 @@ export default function Modal({title, text, href, lang,  isOpen, closeModal}) {
 
             <div>
               <p className='monument-extended text-xl text-white mb-1'>Languages used on project:</p>
-              <p className='leading-6 text-sm text-[#ADB5BD]'>{lang}</p> 
+              <p className='leading-6 text-sm text-[#ADB5BD] mb-2'>{lang}</p> 
             </div>
 
             <div>

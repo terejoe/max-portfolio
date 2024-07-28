@@ -15,7 +15,7 @@ export default function BlogPost() {
   return (
     <>
       <div className='w-full h-screen bg-[#191932]'>
-        <div className='pt-10 md:px-40 px-8'>
+        <div className='pt-10 md:px-40 px-6'>
 
           <div className='md:flex justify-between'>
             <Link to="/"><button className='text-[#1469FF] border px-6 py-3 flex w-max items-cente mb-6 border-[#1469FF] uppercase text-sm'><FaArrowLeftLong className='mr-4 mt-0.5 inline' size={18}/>Back Home</button></Link>
@@ -45,7 +45,7 @@ export default function BlogPost() {
         </div>
 
         <div name='contact'className='w-full bg-[#1E1E37]'>
-          <div className='flex flex-col justify-center w-full h-full mx-auto md:px-36 px-8'>
+          <div className='flex flex-col justify-center w-full h-full mx-auto md:px-36 px-6'>
             <div className=''>
               <p className='md:text-5xl text-xl text-white text-left monument-extended my-8'>Got an idea you would like us<br/>to talk about?</p>
             </div>

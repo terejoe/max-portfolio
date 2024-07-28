@@ -18,11 +18,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex'>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href='#projects'>Projects</a></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#about">About Me</a></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#work-experience">Work Experience</a></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#contact">Contact Me</a></li>
-          <li className='mr-6 hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#blog">My Blog</a></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href='#projects'>Projects</a></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#about">About Me</a></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#work-experience">Work Experience</a></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#contact">Contact Me</a></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#blog">My Blog</a></li>
         </ul>
       </div>
       

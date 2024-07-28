@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import { BlogList } from '../pages/Blog/data';
 
-export default function ModalBlog({isOpen, isClose}) {
+export default function BlogModal({isOpen, isClose}) {
   if(!isOpen) return <></>;
 
   const modalRef = useRef(null)

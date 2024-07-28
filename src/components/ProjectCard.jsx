@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { LuFolderDot } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
-import Modal from './Modal';
+import ProjectModal from './ProjectModal';
 
 export default function ProjectCard({title, text, href,lang}) {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -27,7 +27,7 @@ export default function ProjectCard({title, text, href,lang}) {
 
       </div>
 
-      <Modal title={title} text={text} href={href} lang={lang} closeModal={closeModal} isOpen={isModalOpen} />
+      <ProjectModal title={title} text={text} href={href} lang={lang} closeModal={closeModal} isOpen={isModalOpen} />
 
     </>
   )

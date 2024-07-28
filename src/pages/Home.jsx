@@ -10,10 +10,17 @@ export default function Home() {
   return (
     <div className='w-full h-screen bg-[#191932]'>
 
-      <div className='max-w-[750px] md:pl-40 px-6 flex justify-center text-left flex-col h-full'>
+      <div className='max-w-[1000px] md:pl-40 px-6 flex justify-center text-left flex-col h-full pt-20'>
         <p className='md:text-7xl text-4xl text-[#E3E5E8] mb-4 monument-extended'>Hey, I'm Max.</p>
 
-        <p className='text-[#ADB5BD] lato-regular text-left mb-6 leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien, gravida varius enim posuere tortor, lacus. Viverra orci euismod amet, id. Magna mi lacus sapien lorem. Arcu massa non dolor, egestas scelerisque eu. Sagittis nibh vitae ultrices eget amet porttitor volutpat elit. Gravida neque id sed nisi malesuada fermentum, aliquam mauris turpis.</p>
+        <p className='text-[#ADB5BD] lato-regular text-left mb-6 leading-7'>
+        A full-stack developer takes the hassle out of developing applications. With a full-stack developer, there is the added benefit of versatility and dexterity.<br/>
+
+        Having one person who can build across the board is a boon because you get to have two developers for slightly more than the price of one.<br/>
+
+        Working as a backend developer has been a fulfilling role for the past 6 plus years. I've seen growth over the years and it's been great being able to understand how web systems work progressively.<br/>
+
+        The work is tedious but rewarding while giving me a God's eye view of the entire application.</p>
         
         <a href=""><button className='text-[#1469FF] group border-2 px-6 py-3 flex items-center my-2 border-[#1469FF] uppercase text-sm'>View Resume<GoArrowUpRight className='ml-3' size={18}/></button></a>
 
