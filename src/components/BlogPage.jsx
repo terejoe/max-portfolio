@@ -21,7 +21,7 @@ export default function BlogPage({title}) {
       <div className='mx-auto flex flex-col pt-20 pb-10 justify-center w-full h-full px-6'>
 
         <div className='md:pl-32 pl-4'>
-          <p className='md:text-8xl text-4xl text-[#51516A] league-spartan-bold mb-2'>{title}</p>
+          <p className='md:text-8xl text-4xl text-[#51516A] monument-extended mb-2'>{title}</p>
         </div>
 
         <div className='flex md:ml-32 ml-2 flex-row overflow-x-auto swiper pb-2 gap-4'>

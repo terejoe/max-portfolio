@@ -18,11 +18,16 @@
   font-style: normal;
 }
 
-.league-spartan-bold {
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
+@font-face {
+  font-family: 'MonumentExtended';
+  src: url('./fonts/MonumentExtended-Ultrabold.otf') format('otf');
+  font-weight: normal;
   font-style: normal;
+}
+
+.monument-extended {
+  font-family: 'MonumentExtended', sans-serif;
+  font-weight: 900;
 }
 
 .swiper::-webkit-scrollbar {

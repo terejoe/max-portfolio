@@ -8,8 +8,8 @@ export default function ExperienceCard({role, period, tasks}) {
         <HiOutlineBriefcase size={30} style={{color:"#E3E5E8" }}/>
         
         <div className='flex justify-between w-full text-white mr-2'>
-          <p className='league-spartan-bold md:text-2xl '>{role}</p>
-          <p className='league-spartan-bold md:text-xl text-sm text-right'>{period}</p>
+          <p className='monument-extended md:text-2xl '>{role}</p>
+          <p className='monument-extended md:text-xl text-sm text-right'>{period}</p>
         </div>
 
       </div>

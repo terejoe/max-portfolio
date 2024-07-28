@@ -10,7 +10,7 @@ export default function Experience() {
       <div className='flex flex-col justify-center items-center w-full h-full mx-auto px-2 pt-20'>
 
         <div className=''>
-          <p className='text-4xl md:text-9xl text-[#51516A] league-spartan-bold mb-2 '>Work Experience</p>
+          <p className='text-4xl md:text-9xl text-[#51516A] monument-extended mb-2 '>Work Experience</p>
         </div>
         
         <div className='md:w-4/5 w-full md:grid md:grid-cols-12 mb-8 relative'>

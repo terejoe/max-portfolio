@@ -7,7 +7,7 @@ export default function BlogCard({title, text}) {
     <div className='border-[#97A1AB] border-2 justify-center items-center w-[350px] shrink-0 mt-6'>
       <div className='p-6'>
         {/* <img src={potrait} alt='Potrait' className='h-96 w-68'/> */}
-        <p className='league-spartan-bold text-lg text-left text-white mb-1'>{title}</p>
+        <p className='monument-extended text-lg text-left text-white mb-1'>{title}</p>
         <p className='leading-6 text-sm md:text-base text-[#ADB5BD]'> {text} </p>              
       </div>
 

@@ -47,7 +47,7 @@ export default function BlogPost() {
         <div name='contact'className='w-full bg-[#1E1E37]'>
           <div className='flex flex-col justify-center w-full h-full mx-auto md:px-36 px-8'>
             <div className=''>
-              <p className='md:text-5xl text-xl text-white text-left league-spartan-bold my-8'>Got an idea you would like us<br/>to talk about?</p>
+              <p className='md:text-5xl text-xl text-white text-left monument-extended my-8'>Got an idea you would like us<br/>to talk about?</p>
             </div>
 
             {/* Desktop View */}

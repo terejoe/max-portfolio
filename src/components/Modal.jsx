@@ -26,17 +26,17 @@ export default function Modal({title, text, href, lang,  isOpen, closeModal}) {
           <div className='p-8'>
             <div className='flex gap-4 mb-1'>
               <LuFolderDot size={25} style={{color:"#E3E5E8" }} className='mb-2'/>
-              <p className='league-spartan-bold text-xl text-white'>{title}</p>
+              <p className='monument-extended text-xl text-white'>{title}</p>
               <FaTimes onClick={closeModal} size={20} className=' fill-[#ADB5BD] top-2 right-2 absolute  cursor-pointer'/>
             </div>
 
             <div>
-              <p className='league-spartan-bold text-xl text-white mb-1'>Languages used on project:</p>
+              <p className='monument-extended text-xl text-white mb-1'>Languages used on project:</p>
               <p className='leading-6 text-sm text-[#ADB5BD]'>{lang}</p> 
             </div>
 
             <div>
-              <p className='league-spartan-bold text-xl text-white mb-1'>Project Brief:</p>
+              <p className='monument-extended text-xl text-white mb-1'>Project Brief:</p>
               <p className='leading-6 text-sm text-[#ADB5BD]'> {text} </p> 
             </div>
             

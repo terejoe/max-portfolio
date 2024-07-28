@@ -11,7 +11,7 @@ export default function Home() {
     <div className='w-full h-screen bg-[#191932]'>
 
       <div className='max-w-[750px] md:pl-40 px-6 flex justify-center text-left flex-col h-full'>
-        <p className='md:text-7xl text-4xl text-[#E3E5E8] mb-4 league-spartan-bold'>Hey, I'm Max.</p>
+        <p className='md:text-7xl text-4xl text-[#E3E5E8] mb-4 monument-extended'>Hey, I'm Max.</p>
 
         <p className='text-[#ADB5BD] lato-regular text-left mb-6 leading-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien, gravida varius enim posuere tortor, lacus. Viverra orci euismod amet, id. Magna mi lacus sapien lorem. Arcu massa non dolor, egestas scelerisque eu. Sagittis nibh vitae ultrices eget amet porttitor volutpat elit. Gravida neque id sed nisi malesuada fermentum, aliquam mauris turpis.</p>
         

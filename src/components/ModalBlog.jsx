@@ -44,7 +44,7 @@ export default function ModalBlog({isOpen, isClose}) {
 
             <ul className='overflow-y-auto'>
               {BlogList.map((blog) => (
-                  <li className='league-spartan-bold text-lg text-white truncate border-b border-gray-400 py-1 mb-1'>{blog.title}</li>
+                  <li className='monument-extended text-lg text-white truncate border-b border-gray-400 py-1 mb-1'>{blog.title}</li>
               ))}
             </ul>
 

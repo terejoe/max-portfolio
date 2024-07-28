@@ -19,7 +19,7 @@ export default function ProjectCard({title, text, href,lang}) {
       <div onClick={openModal} className='border-[#97A1AB] border-2 justify-center items-center w-[350px] shrink-0'>
         <div className='p-6'>
           <LuFolderDot size={25} style={{color:"#E3E5E8" }} className='mb-2'/>
-          <p className='league-spartan-bold text-xl text-white mb-1'>{title}</p>
+          <p className='monument-extended text-xl text-white mb-1'>{title}</p>
           <p className='leading-6 text-sm text-[#ADB5BD]'> {text} </p>              
         </div>
 
