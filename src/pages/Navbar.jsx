@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { CgMenuGridR } from "react-icons/cg";
 import logoIcon from '../assets/logo.png';
-
+import {Link as ScrollLink} from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [nav, setNav] = useState(false)
@@ -18,9 +19,11 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex'>
-          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href='#projects'>Projects</a></li>
-          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#about">About Me</a></li>
-          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#work-experience">Work Experience</a></li>
+          <Link to='/projects'><ScrollLink to='/projects' smooth={true} duration={500} className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'>Projects</ScrollLink></Link>
+
+
+          <li><ScrollLink to='about' smooth={true} duration={500} className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'>About Me</ScrollLink></li>
+          <li><ScrollLink to='work-experience' smooth={true} duration={500} className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'>Work Experience</ScrollLink></li>
           <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#contact">Contact Me</a></li>
           <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#blog">My Blog</a></li>
         </ul>

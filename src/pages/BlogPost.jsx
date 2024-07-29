@@ -4,18 +4,19 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { FaArrowLeftLong, FaCirclePlay, FaXTwitter } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import { TbMailCheck } from 'react-icons/tb';
-
 import BlogPage from '../components/BlogPage';
-
+import DisplayArticle from '../components/DisplayArticle';
 
 export default function BlogPost() {
   const blog = {
     title: "My other articles"
   };
+
   return (
     <>
-      <div className='w-full h-screen bg-[#191932]'>
-        <div className='pt-10 md:px-40 px-6'>
+      <Navbar/>
+      <div className='w-full bg-[#191932]'>
+        <div className='pt-28 md:px-40 px-6'>
 
           <div className='md:flex justify-between'>
             <Link to="/"><button className='text-[#1469FF] border px-6 py-3 flex w-max items-cente mb-6 border-[#1469FF] uppercase text-sm'><FaArrowLeftLong className='mr-4 mt-0.5 inline' size={18}/>Back Home</button></Link>
@@ -38,6 +39,7 @@ export default function BlogPost() {
           </div>
 
           <div>
+            <DisplayArticle/>
             <div></div>
             <div></div>
           </div>

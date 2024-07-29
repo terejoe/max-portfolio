@@ -1,24 +1,31 @@
-import { createBrowserRouter, RouterProvider} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import BlogPost from "./pages/BlogPost";
+import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <LandingPage/>
-    },
-    {
-      path: "/blog-post",
-      element: <BlogPost/>
-    },
+  // const router = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <LandingPage/>
+  //   },
+  //   {
+  //     path: "/blog-post",
+  //     element: <BlogPost/>
+  //   },
     
-  ]);
+  // ]);
   
   return (
+    
     <>
-      <RouterProvider router={router}/>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/blog-post" element={<BlogPost />} />
+      </Routes>
     </>
+    
   )
 }
 
