@@ -5,7 +5,7 @@ import { RiGithubLine } from 'react-icons/ri';
 import BlogModal from './BlogModal';
 import { BlogList } from '../pages/Blog/data';
 
-export default function BlogPage({title}) {
+export default function BlogPage({title,id}) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () =>{
@@ -17,7 +17,7 @@ export default function BlogPage({title}) {
   }
 
   return (
-    <div id='blog' className='w-full bg-[#191932]'>
+    <div id={id} className='w-full bg-[#191932]'>
       <div className='mx-auto flex flex-col pt-20 pb-10 justify-center w-full h-full px-2'>
 
         <div className='md:pl-32 pl-4'>

@@ -5,12 +5,12 @@ export default function Contact() {
   return (
     <>
       <div id='contact' className='w-full h-[130px] bg-[#191932]'>
-        <div className='py-8 flex overflow-x-auto swiper pl-10'>
+        <div className='py-10 flex overflow-x-auto swiper pl-10'>
           <p className='text-7xl text-[#51516A] monument-extended shrink-0'>I write PHP, JavaScript, TypeSript, GoLang</p>
         </div>
       </div>
 
-      <div name='contact'className='w-full bg-[#1E1E37]'>
+      <div className='w-full bg-[#1E1E37]'>
         <div className='flex flex-col justify-center w-full h-full mx-auto md:px-36 px-6'>
           <div className=''>
             <p className='md:text-5xl text-xl text-white text-left monument-extended my-8'>Got an idea you would like us<br/>to talk about?</p>

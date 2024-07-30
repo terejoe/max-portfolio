@@ -3,9 +3,10 @@ import BlogPage from '../../components/BlogPage';
 
 export default function Blog() {
   const blog = {
-    title: "My Blog"
+    title: "My Blog",
+    id: "blog"
   };
   return (
-    <BlogPage title={blog.title}/>
+    <BlogPage id={blog.id} title={blog.title}/>
   )
 }

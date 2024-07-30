@@ -2,8 +2,7 @@ import React, {useState} from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { CgMenuGridR } from "react-icons/cg";
 import logoIcon from '../assets/logo.png';
-import {Link as ScrollLink} from 'react-scroll';
-import { Link } from 'react-router-dom';
+import  { NavHashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   const [nav, setNav] = useState(false)
@@ -19,13 +18,13 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className='hidden md:flex'>
-          <Link to='/projects'><ScrollLink to='/projects' smooth={true} duration={500} className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'>Projects</ScrollLink></Link>
 
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><NavHashLink to="/#projects">Projects</NavHashLink></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><NavHashLink to="/#about">About Me</NavHashLink></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><NavHashLink to="/#work-experience">Work Experience</NavHashLink></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><NavHashLink to="/#contact">Contact Me</NavHashLink></li>
+          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><NavHashLink to="/#blog">My Blog</NavHashLink></li>
 
-          <li><ScrollLink to='about' smooth={true} duration={500} className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'>About Me</ScrollLink></li>
-          <li><ScrollLink to='work-experience' smooth={true} duration={500} className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'>Work Experience</ScrollLink></li>
-          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#contact">Contact Me</a></li>
-          <li className='mr-6 text-[#E3E5E8] hover:text-[#a7a7a7] text-sm uppercase cursor-pointer'><a href="#blog">My Blog</a></li>
         </ul>
       </div>
       
@@ -36,12 +35,14 @@ export default function Navbar() {
 
       {/* Hamburger Menu Items */}
       <ul className = {!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#191932] flex flex-col justify-center items-center text-white'}>
+
         <li><FaTimes onClick = {handleClick} size={35} className='mx-auto cursor-pointer'/></li>
-        <li className='py-6 text-4xl uppercase cursor-pointer'><a onClick = {handleClick} href="#projects">Projects</a></li>
-        <li className='py-6 text-4xl uppercase cursor-pointer'><a onClick = {handleClick} href="#about">About Me</a></li>
-        <li className='py-6 text-4xl uppercase cursor-pointer'><a onClick = {handleClick} href="#work-experience">Work Experience</a></li>
-        <li className='py-6 text-4xl uppercase cursor-pointer'><a onClick = {handleClick} href="#contact">Contact Me</a></li>
-        <li className='py-6 text-4xl uppercase cursor-pointer'><a onClick = {handleClick} href="#blog">My Blog</a></li>
+
+        <li className='py-6 text-4xl uppercase cursor-pointer'><NavHashLink onClick = {handleClick} to="/#projects">Projects</NavHashLink></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><NavHashLink onClick = {handleClick} to="/#about">About Me</NavHashLink></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><NavHashLink onClick = {handleClick} to="/#work-experience">Work Experience</NavHashLink></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><NavHashLink onClick = {handleClick} to="/#contact">Contact Me</NavHashLink></li>
+        <li className='py-6 text-4xl uppercase cursor-pointer'><NavHashLink onClick = {handleClick} to="/#blog">My Blog</NavHashLink></li>
       </ul>
       
     </div>
