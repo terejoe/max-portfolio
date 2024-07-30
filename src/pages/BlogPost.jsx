@@ -9,8 +9,7 @@ import DisplayArticle from '../components/DisplayArticle';
 
 export default function BlogPost() {
   const blog = {
-    title: "My other articles",
-    id: ""
+    title: "My other articles"
   };
 
   return (
