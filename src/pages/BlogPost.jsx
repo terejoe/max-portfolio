@@ -3,12 +3,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaArrowLeftLong, FaCirclePlay, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { TbMailCheck } from "react-icons/tb";
-import BlogPage from "../components/BlogPage";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_SINGLE_ARTICLE } from "../graphql/queries";
 import parse from 'html-react-parser';
 import "./BlogPost.css"
+import Footer from "../components/Footer";
+import BlogList from "../components/BlogList";
 
 export default function BlogPost() {
   const { blogId } = useParams();
@@ -20,12 +21,9 @@ export default function BlogPost() {
   if (loading) return null;
   if (error) return `Error! ${error}`;
 
-  console.log("html", data.post.content.html)
-
-  console.log(blogId)
-  const blog = {
-    title: "My other articles",
-  };
+  // console.log("html", data.post.content.html)
+  // console.log(blogId)
+ 
 
   return (
     <>
@@ -101,9 +99,24 @@ export default function BlogPost() {
               </a>
             </button>
           </div>
-        </div>
 
-        <BlogPage title={blog.title} />
+          
+          <div className="w-full bg-[#191932]">
+            <div className="mx-auto flex flex-col pt-10 pb-10 justify-center w-full h-full px-2">
+              <div className="md:pl-32 pl-4">
+                <p className="md:text-8xl text-4xl text-[#51516A] monument-extended mb-2">
+                  My other articles
+                </p>
+              </div>
+
+              <BlogList/>
+            </div>
+          </div>
+
+          
+        </div>
+        <Footer/>
+
       </div>
     </>
   );
