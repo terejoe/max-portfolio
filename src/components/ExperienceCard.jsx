@@ -1,4 +1,3 @@
-import React from 'react';
 import { HiOutlineBriefcase } from "react-icons/hi";
 
 export default function ExperienceCard({role, period, tasks}) {

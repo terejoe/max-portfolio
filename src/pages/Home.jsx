@@ -1,4 +1,3 @@
-import React from 'react';
 import { GoArrowUpRight } from "react-icons/go";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -10,7 +9,7 @@ export default function Home() {
   return (
     <div className='w-full h-screen bg-[#191932]'>
 
-      <div className='max-w-[900px] md:pl-40 px-6 flex justify-center text-left flex-col h-full pt-20'>
+      <div className='max-w-[900px] md:pl-48 px-6 flex justify-center text-left flex-col h-full pt-20'>
         <p className='md:text-7xl text-4xl text-[#E3E5E8] mb-4 monument-extended'>Hey, I'm Max.</p>
 
         <p className='text-[#ADB5BD] lato-regular text-left mb-6 leading-7'>

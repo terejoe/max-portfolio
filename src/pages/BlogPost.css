@@ -1,0 +1,24 @@
+.blog-post h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.blog-post pre {
+  background-color: #01121f;
+  padding: 10px;
+  margin: 15px 0;
+  width: fit-content;
+  max-width: 100%;
+  border-radius: 7px;
+  overflow-x: auto;
+}
+
+.blog-post img {
+  margin: 15px auto;
+}
+
+@media (max-width: 480px) {
+  .blog-post pre {
+    width: 100%
+  }
+}

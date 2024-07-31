@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CgMenuGridR } from "react-icons/cg";
 import logoIcon from "../assets/logo.png";

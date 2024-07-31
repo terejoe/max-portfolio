@@ -1,4 +1,3 @@
-import React from 'react'
 import { TbMailCheck } from 'react-icons/tb';
 
 export default function Contact() {

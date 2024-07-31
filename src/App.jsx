@@ -4,17 +4,6 @@ import BlogPost from "./pages/BlogPost";
 import ScrollToTop from "./hooks/ScrollToTop";
 
 function App() {
-  // const router = createBrowserRouter([
-  //   {
-  //     path: "/",
-  //     element: <LandingPage/>
-  //   },
-  //   {
-  //     path: "/blog-post",
-  //     element: <BlogPost/>
-  //   },
-    
-  // ]);
   
   return (
     
@@ -22,7 +11,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/blog-post" element={<BlogPost />} />
+        <Route path="/blog-post/:blogId" element={<BlogPost />} />
       </Routes>
     </>
     

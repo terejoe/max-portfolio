@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { LuFolderDot } from "react-icons/lu";
 import { GoArrowUpRight } from "react-icons/go";
 import ProjectModal from './ProjectModal';

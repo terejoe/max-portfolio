@@ -1,4 +1,3 @@
-import React from 'react'
 // import potrait from '../assets/potrait.jpg'
 
 export default function About() {

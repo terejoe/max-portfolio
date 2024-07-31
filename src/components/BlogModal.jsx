@@ -1,10 +1,19 @@
-import React, { useEffect, useRef } from 'react'
-import { BlogList } from '../pages/Blog/data';
+import { useEffect, useRef } from 'react'
+import { GET_ARTICLES } from '../graphql/queries';
+import { useQuery } from '@apollo/client';
 
 export default function BlogModal({isOpen, isClose}) {
   if(!isOpen) return <></>;
 
   const modalRef = useRef(null)
+
+  const { loading, error, data } = useQuery(GET_ARTICLES, {
+    variables: { pageSize: 5, page: 1 }
+  });
+
+  if (loading) return null;
+  if (error) return `Error! ${error}`;
+
 
   useEffect(() => {
     const handleClickOutside = (event) =>{
@@ -24,12 +33,11 @@ export default function BlogModal({isOpen, isClose}) {
       <div ref={modalRef} className='bg-[#191932] fixed w-[350px] md:w-[550px] border-gray-600 border-2 rounded-md'>
         <div className='justify-center items-center'>
           <div className='p-4'>
+
             {/* Search Input */}
             <div className="relative">
               <input
                 type="text"
-                // value={searchQuery}
-                // onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Search..."
                 className="w-full px-10 py-2 mb-4 rounded-lg text-left h-12 focus:outline-none bg-inherit text-gray-400"
               />
@@ -43,8 +51,8 @@ export default function BlogModal({isOpen, isClose}) {
             {/* Blog Items */}
 
             <ul className='overflow-y-auto'>
-              {BlogList.map((blog) => (
-                  <li className='monument-extended text-lg text-white truncate border-b border-gray-400 py-1 mb-1'>{blog.title}</li>
+              {data.user.posts.nodes.map((blog,i) => (
+                  <li key={i} className='monument-extended text-lg text-white truncate border-b border-gray-400 py-1 mb-1'>{blog.title}</li>
               ))}
             </ul>
 
