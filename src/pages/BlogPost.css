@@ -3,6 +3,11 @@
   font-weight: bold;
 }
 
+.blog-post p {
+  color: #E3E5E8;
+  font-size: 1rem;
+}
+
 .blog-post pre {
   background-color: #01121f;
   padding: 10px;
@@ -19,6 +24,6 @@
 
 @media (max-width: 480px) {
   .blog-post pre {
-    width: 100%
+    width: 100%;
   }
 }

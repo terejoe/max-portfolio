@@ -8,7 +8,6 @@ export default function BlogList() {
     variables: { pageSize: 5, page: 1 }
   });
 
-
   if (loading) return null;
   if (error) return `Error! ${error}`;
 

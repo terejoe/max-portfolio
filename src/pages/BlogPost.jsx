@@ -21,7 +21,7 @@ export default function BlogPost() {
   if (loading) return null;
   if (error) return `Error! ${error}`;
 
-  // console.log("html", data.post.content.html)
+  console.log("html", data.post.content.html)
   // console.log(blogId)
  
 
