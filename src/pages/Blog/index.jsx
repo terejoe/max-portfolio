@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import BlogModal from "../../components/BlogModal";
 import BlogList from "../../components/BlogList";
 import Footer from "../../components/Footer";

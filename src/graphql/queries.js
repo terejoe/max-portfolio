@@ -11,6 +11,7 @@ export const GET_ARTICLES = gql`
         nodes {
           id
           title
+          slug
           subtitle
           content {
             html
