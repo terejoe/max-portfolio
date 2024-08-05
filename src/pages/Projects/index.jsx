@@ -10,8 +10,8 @@ export default function Projects() {
         </div>
 
         <div className='flex md:ml-32 ml-2 flex-row gap-3 overflow-x-auto swiper pb-2'>
-          {ProjectList.map((project) => (
-            <ProjectCard title={project.title} text={project.text} href={project.href} lang={project.lang}/>
+          {ProjectList.map((project, id) => (
+            <ProjectCard key={id} title={project.title} text={project.text} href={project.href} lang={project.lang}/>
           ))}
           
         </div>

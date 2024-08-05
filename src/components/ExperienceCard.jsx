@@ -14,8 +14,8 @@ export default function ExperienceCard({role, period, tasks}) {
       </div>
 
       <div className='md:pl-20 pl-16 text-[#ADB5BD] mr-2 text-sm md:text-base'>
-        {tasks.map((task) =>
-          <li>{task}</li>
+        {tasks.map((task, id) =>
+          <li key={id}>{task}</li>
         )}
         
       </div>

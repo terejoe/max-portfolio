@@ -15,8 +15,8 @@ export default function Experience() {
         
         <div className='md:w-4/5 w-full md:grid md:grid-cols-12 mb-8 relative'>
 
-          {ExperienceList.map((experience) => (
-            <ExperienceCard role={experience.role} period={experience.period} tasks={experience.tasks}/>
+          {ExperienceList.map((experience, id) => (
+            <ExperienceCard key={id} role={experience.role} period={experience.period} tasks={experience.tasks}/>
           ))}
 
           <div className='hidden md:block top-1/2 right-0 absolute'>
