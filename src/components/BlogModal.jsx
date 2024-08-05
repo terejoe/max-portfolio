@@ -35,7 +35,7 @@ export default function BlogModal({isOpen, isClose}) {
   
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div ref={modalRef} className='bg-[#191932] fixed w-[350px] md:w-[550px] border-gray-600 border-2 rounded-md'>
+      <div ref={modalRef} className='bg-[#191932] fixed w-[350px] md:w-[550px] border-gray-600 border-2 rounded-md h-[250px] overflow-y-auto swiper'>
         <div className='justify-center items-center'>
           <div className='p-4'>
             
