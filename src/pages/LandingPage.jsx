@@ -5,6 +5,7 @@ import About from './About';
 import Experience from './Experience';
 import Contact from './Contact';
 import Blog from './Blog';
+import Languages from './Languages';
 
 
 export default function LandingPage() {
@@ -15,6 +16,7 @@ export default function LandingPage() {
       <Projects/>
       <About/>
       <Experience/>
+      <Languages/>
       <Contact/>
       <Blog/>
     </>
