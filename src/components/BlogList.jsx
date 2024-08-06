@@ -8,16 +8,16 @@ export default function BlogList() {
     variables: { pageSize: 5, page: 1 }
   });
 
-  if (loading) return null;
-  if (error) return `Error! ${error}`;
+  if (loading) return <p className="text-white mx-auto">Loading...</p>;
+  if (error) return <p className="text-white mx-auto">Error : {error.message}</p>;
 
   
   return (
     <div className="flex md:ml-32 ml-2 flex-row overflow-x-auto swiper pb-2 gap-4">
       {data.user.posts.nodes.map((blog) => (
-        <BlogCard key={blog.id} title={blog.title} text={blog.content.text} blogId={blog.id}/>
+        <BlogCard key={blog.id} title={blog.title} text={blog.content.text} blogId={blog.id} blogImg={blog.coverImage.url}/>
       ))}
-           
+
     </div>
   );
 }

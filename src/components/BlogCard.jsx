@@ -1,11 +1,12 @@
 import { RiArrowRightUpFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-export default function BlogCard({ blogId, title, text }) {
+export default function BlogCard({ blogId, title, text, blogImg }) {
   return (
     <div className="border-[#97A1AB] border-2 justify-center items-center w-[350px] shrink-0 mt-6">
-      <div className="p-6">
-        {/* <img src={potrait} alt='Potrait' className='h-96 w-68'/> */}
+      <img src={blogImg} alt='Blog Image' className='h-48 w-full'/>
+
+      <div className="px-4 mt-2">
         <p className="monument-extended text-lg text-left text-white mb-1">
           {title}
         </p>

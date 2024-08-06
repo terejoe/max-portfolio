@@ -64,6 +64,7 @@ export default function BlogPost() {
           </div>
 
           <div>
+            <img src={data.post.coverImage.url} alt='Blog Image' className='h-96 w-full'/>
 
             <div className="text-[#ffffff] blog-post pb-10"> 
               {parse(data.post.content.html)}
