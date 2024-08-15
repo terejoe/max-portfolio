@@ -26,4 +26,8 @@
   .blog-post pre {
     width: 100%;
   }
+
+  .blog-post h1 {
+    font-size: 35px;
+  }
 }
