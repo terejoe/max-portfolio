@@ -2,7 +2,6 @@ import Navbar from "./Navbar";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaArrowLeftLong, FaCirclePlay, FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import { TbMailCheck } from "react-icons/tb";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { GET_SINGLE_ARTICLE } from "../graphql/queries";
@@ -24,6 +23,9 @@ export default function BlogPost() {
 
   // console.log("html", data.post.content.html)
   // console.log(blogId)
+
+  const twitterShareUrl = `https://twitter.com/intent/tweet?text=${data.post.title}&url=${data.post.url}`;
+  const linkedInShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${data.post.url}`;
  
 
   return (
@@ -49,13 +51,13 @@ export default function BlogPost() {
                 <p className="text-white text-sm mr-3">Share this post:</p>
                 <ul className="flex">
                   <li className="mr-3 bg-blue-600 w-[23px] h-[23px] items-center justify-center flex rounded-full">
-                    <a href={data.post.publication.links.linkedin}>
+                    <a href={linkedInShareUrl}>
                       <FaLinkedinIn size={13} className="fill-white" />
                     </a>
                   </li>
 
                   <li className="bg-blue-600 w-[23px] h-[23px] items-center justify-center flex rounded-full">
-                    <a href={data.post.publication.links.twitter}>
+                    <a href={twitterShareUrl}>
                       <FaXTwitter size={13} className="fill-white" />
                     </a>
                   </li>

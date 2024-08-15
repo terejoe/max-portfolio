@@ -12,7 +12,7 @@ export const GET_ARTICLES = gql`
           id
           title
           slug
-          coverImage{
+          coverImage {
             url
           }
           subtitle
@@ -38,22 +38,22 @@ export const GET_SINGLE_ARTICLE = gql`
     post(id: $id) {
       id
       slug
-      title 
+      url
+      title
       readTimeInMinutes
-    publication{
-      links{
-        twitter
-        linkedin
+      publication {
+        links {
+          twitter
+          linkedin
+        }
       }
-    }
-      
+
       coverImage {
         url
       }
       content {
         html
       }
-        
     }
   }
 `;
