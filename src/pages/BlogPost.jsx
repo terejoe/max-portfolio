@@ -44,7 +44,7 @@ export default function BlogPost() {
             <div className="flex md:gap-10 gap-4 my-4 px-1">
               <div className="flex">
                 <p className="text-white mr-3 text-sm">Listen:</p>
-                <FaCirclePlay size={20} className="fill-[#1469FF]" />
+                <FaCirclePlay size={20} className="fill-[#1469FF] cursor-pointer" />
                 <p className="text-[#1469FF] ml-2 text-sm">{`${data.post.readTimeInMinutes}.00`}</p>
               </div>
               <div className="flex">
