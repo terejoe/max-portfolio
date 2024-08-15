@@ -21,7 +21,7 @@ export default function BlogPost() {
   if (loading) return null;
   if (error) return `Error! ${error}`;
 
-  console.log("html", data.post.content.html)
+  // console.log("html", data.post.content.html)
   // console.log(blogId)
  
 
@@ -42,19 +42,19 @@ export default function BlogPost() {
               <div className="flex">
                 <p className="text-white mr-3 text-sm">Listen:</p>
                 <FaCirclePlay size={20} className="fill-[#1469FF]" />
-                <p className="text-[#1469FF] ml-2 text-sm">3:02</p>
+                <p className="text-[#1469FF] ml-2 text-sm">{`${data.post.readTimeInMinutes}.00`}</p>
               </div>
               <div className="flex">
                 <p className="text-white text-sm mr-3">Share this post:</p>
                 <ul className="flex">
                   <li className="mr-3 bg-blue-600 w-[23px] h-[23px] items-center justify-center flex rounded-full">
-                    <a href="https://linkedin.com/in/max-otifavour">
+                    <a href={data.post.publication.links.linkedin}>
                       <FaLinkedinIn size={13} className="fill-white" />
                     </a>
                   </li>
 
                   <li className="bg-blue-600 w-[23px] h-[23px] items-center justify-center flex rounded-full">
-                    <a href="https://x.com/kellslte">
+                    <a href={data.post.publication.links.twitter}>
                       <FaXTwitter size={13} className="fill-white" />
                     </a>
                   </li>
