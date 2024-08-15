@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 // import LandingPage from "./pages/LandingPage";
 // import BlogPost from "./pages/BlogPost";
 import ScrollToTop from "./hooks/ScrollToTop";
+import LoadingPage from "./components/LoadingPage";
 
 
 const LandingPage = React.lazy(() => import("./pages/LandingPage")); 
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <Suspense fallback={<div>Loading..</div>}>
+      <Suspense fallback={<LoadingPage/>}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/blog-post/:blogId" element={<BlogPost />} />
