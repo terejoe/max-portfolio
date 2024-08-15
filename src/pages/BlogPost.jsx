@@ -10,6 +10,7 @@ import parse from 'html-react-parser';
 import "./BlogPost.css"
 import Footer from "../components/Footer";
 import BlogList from "../components/BlogList";
+import Contact from "./Contact";
 
 export default function BlogPost() {
   const { blogId } = useParams();
@@ -74,48 +75,20 @@ export default function BlogPost() {
 
         </div>
 
-        <div name="contact" className="w-full bg-[#1E1E37]">
-          <div className="flex flex-col justify-center w-full h-full mx-auto md:px-36 px-6">
-            <div className="">
-              <p className="md:text-5xl text-xl text-white text-left monument-extended my-8">
-                Got an idea you would like us
-                <br />
-                to talk about?
+        <Contact/>
+
+        <div className="w-full bg-[#191932]">
+          <div className="mx-auto flex flex-col pt-10 pb-10 justify-center w-full h-full px-2">
+            <div className="md:pl-32 pl-4">
+              <p className="md:text-8xl text-4xl text-[#51516A] monument-extended mb-2">
+                My other articles
               </p>
             </div>
 
-            {/* Desktop View */}
-            <button className="text-[#1469FF] border-2 px-6 py-3 w-max items-cente mb-6 border-[#1469FF] uppercase text-sm hidden md:flex">
-              <a href="mailto:maxotif@gmail.com">
-                Shoot Me a Mail
-                <TbMailCheck className="ml-3 inline" size={18} />
-              </a>
-            </button>
-
-            {/* Mobile View */}
-            <button className="text-[#1469FF] border-2 px-6 py-3 flex w-max items-cente mb-6 border-[#1469FF] uppercase text-sm md:hidden">
-              <a href="">
-                View Resume
-                <TbMailCheck className="ml-3 inline" size={18} />
-              </a>
-            </button>
+            <BlogList/>
           </div>
-
-          
-          <div className="w-full bg-[#191932]">
-            <div className="mx-auto flex flex-col pt-10 pb-10 justify-center w-full h-full px-2">
-              <div className="md:pl-32 pl-4">
-                <p className="md:text-8xl text-4xl text-[#51516A] monument-extended mb-2">
-                  My other articles
-                </p>
-              </div>
-
-              <BlogList/>
-            </div>
-          </div>
-
-          
         </div>
+
         <Footer/>
 
       </div>
